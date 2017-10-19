@@ -1,0 +1,1125 @@
+Incremental java compilation is an incubating feature.
+:app:androidDependencies
+debug
++--- com.android.support:multidex:1.0.1@aar
++--- com.android.support:appcompat-v7:25.3.1@aar
+|    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-compat:25.3.1@aar
+|                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- com.android.support.constraint:constraint-layout:1.0.2@aar
+|    \--- com.android.support.constraint:constraint-layout-solver:1.0.2@jar
++--- com.android.support:design:25.3.1@aar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:recyclerview-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-core-ui:25.3.1@aar
+|    |         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-compat:25.3.1@aar
+|    |              \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:transition:25.3.1@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- com.android.support:cardview-v7:25.3.1@aar
+|    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.core:CpcCore:fix_hid_idplatform@aar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1@aar
+|    |    \--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    +--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- fr.coppernic.external:D2xx:2.4.9@aar
+|    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.id2mp:sdk:0.1.042@aar
+|    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.pcsc:CpcPcsc:1.4.3@aar
+|    \--- fr.coppernic.cpcframework.cpcutils:CpcUtilsLib:6.2.1@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.hid.iclassProx:CpcHidIClassProx:dev@aar
+|    +--- fr.coppernic.sdk.core:CpcCore:fix_hid_idplatform@aar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    |    \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1@aar
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    |    +--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- fr.coppernic.external:D2xx:2.4.9@aar
+|    |    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.id2mp:sdk:0.1.042@aar
+|    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:support-v4:25.3.1@aar
+|         +--- com.android.support:support-compat:25.3.1@aar
+|         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-media-compat:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-core-utils:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-core-ui:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-fragment:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-core-utils:25.3.1@aar
+|                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-compat:25.3.1@aar
+|                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+\--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+     \--- org.reactivestreams:reactive-streams:1.0.0@jar
+
+debugAndroidTest
++--- com.android.support:multidex-instrumentation:1.0.1@aar
+|    \--- com.android.support:multidex:1.0.1@aar
+\--- com.android.support.test.espresso:espresso-core:2.2.2@aar
+     +--- com.squareup:javawriter:2.1.1@jar
+     +--- com.android.support.test:rules:0.5@aar
+     |    \--- com.android.support.test:runner:0.5@aar
+     |         +--- junit:junit:4.12@jar
+     |         |    \--- org.hamcrest:hamcrest-core:1.3@jar
+     |         \--- com.android.support.test:exposed-instrumentation-api-publish:0.5@aar
+     +--- com.android.support.test:runner:0.5@aar
+     |    +--- junit:junit:4.12@jar
+     |    |    \--- org.hamcrest:hamcrest-core:1.3@jar
+     |    \--- com.android.support.test:exposed-instrumentation-api-publish:0.5@aar
+     +--- javax.inject:javax.inject:1@jar
+     +--- org.hamcrest:hamcrest-library:1.3@jar
+     |    \--- org.hamcrest:hamcrest-core:1.3@jar
+     +--- com.android.support.test.espresso:espresso-idling-resource:2.2.2@aar
+     +--- org.hamcrest:hamcrest-integration:1.3@jar
+     |    \--- org.hamcrest:hamcrest-library:1.3@jar
+     |         \--- org.hamcrest:hamcrest-core:1.3@jar
+     +--- com.google.code.findbugs:jsr305:2.0.1@jar
+     \--- javax.annotation:javax.annotation-api:1.2@jar
+
+debugUnitTest
+\--- junit:junit:4.12@jar
+     \--- org.hamcrest:hamcrest-core:1.3@jar
+
+release
++--- com.android.support:multidex:1.0.1@aar
++--- com.android.support:appcompat-v7:25.3.1@aar
+|    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-compat:25.3.1@aar
+|                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- com.android.support.constraint:constraint-layout:1.0.2@aar
+|    \--- com.android.support.constraint:constraint-layout-solver:1.0.2@jar
++--- com.android.support:design:25.3.1@aar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:recyclerview-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-core-ui:25.3.1@aar
+|    |         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-compat:25.3.1@aar
+|    |              \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:transition:25.3.1@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- com.android.support:cardview-v7:25.3.1@aar
+|    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.core:CpcCore:fix_hid_idplatform@aar
+|    +--- com.android.support:support-v4:25.3.1@aar
+|    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    +--- io.reactivex.rxjava2:rxandroid:2.0.1@aar
+|    |    \--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |         \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    +--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- fr.coppernic.external:D2xx:2.4.9@aar
+|    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    +--- com.id2mp:sdk:0.1.042@aar
+|    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.pcsc:CpcPcsc:1.4.3@aar
+|    \--- fr.coppernic.cpcframework.cpcutils:CpcUtilsLib:6.2.1@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.hid.iclassProx:CpcHidIClassProx:dev@aar
+|    +--- fr.coppernic.sdk.core:CpcCore:fix_hid_idplatform@aar
+|    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.android.support:appcompat-v7:25.3.1@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-v4:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |         \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    +--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |    |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:animated-vector-drawable:25.3.1@aar
+|    |    |         \--- com.android.support:support-vector-drawable:25.3.1@aar
+|    |    |              +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                   \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    |    \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    |    +--- io.reactivex.rxjava2:rxandroid:2.0.1@aar
+|    |    |    \--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+|    |    |         \--- org.reactivestreams:reactive-streams:1.0.0@jar
+|    |    +--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    |    |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- fr.coppernic.external:D2xx:2.4.9@aar
+|    |    |    \--- com.android.support:support-v4:25.3.1@aar
+|    |    |         +--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |         \--- com.android.support:support-fragment:25.3.1@aar
+|    |    |              +--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-media-compat:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              +--- com.android.support:support-core-ui:25.3.1@aar
+|    |    |              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              |    \--- com.android.support:support-compat:25.3.1@aar
+|    |    |              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |              \--- com.android.support:support-core-utils:25.3.1@aar
+|    |    |                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    |                   \--- com.android.support:support-compat:25.3.1@aar
+|    |    |                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    |    +--- com.id2mp:sdk:0.1.042@aar
+|    |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|         +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-v4:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-utils:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-fragment:25.3.1@aar
+|                   +--- com.android.support:support-compat:25.3.1@aar
+|                   |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-media-compat:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   +--- com.android.support:support-core-ui:25.3.1@aar
+|                   |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   |    \--- com.android.support:support-compat:25.3.1@aar
+|                   |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-core-utils:25.3.1@aar
+|                        +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                        \--- com.android.support:support-compat:25.3.1@aar
+|                             \--- com.android.support:support-annotations:26.0.0-alpha1@jar
++--- fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.10.0@aar
+|    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|    \--- com.android.support:support-v4:25.3.1@aar
+|         +--- com.android.support:support-compat:25.3.1@aar
+|         |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-media-compat:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-core-utils:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         +--- com.android.support:support-core-ui:25.3.1@aar
+|         |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         |    \--- com.android.support:support-compat:25.3.1@aar
+|         |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|         \--- com.android.support:support-fragment:25.3.1@aar
+|              +--- com.android.support:support-compat:25.3.1@aar
+|              |    \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-media-compat:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              +--- com.android.support:support-core-ui:25.3.1@aar
+|              |    +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              |    \--- com.android.support:support-compat:25.3.1@aar
+|              |         \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|              \--- com.android.support:support-core-utils:25.3.1@aar
+|                   +--- com.android.support:support-annotations:26.0.0-alpha1@jar
+|                   \--- com.android.support:support-compat:25.3.1@aar
+|                        \--- com.android.support:support-annotations:26.0.0-alpha1@jar
+\--- io.reactivex.rxjava2:rxjava:2.1.0@jar
+     \--- org.reactivestreams:reactive-streams:1.0.0@jar
+
+releaseUnitTest
+\--- junit:junit:4.12@jar
+     \--- org.hamcrest:hamcrest-core:1.3@jar
+
+BUILD SUCCESSFUL
+
+Total time: 1.714 secs

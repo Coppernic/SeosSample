@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">HID SEOS Demo</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_settings">Settings</string>
+    <string name="facility_code">Facility Code:</string>
+    <string name="card_number">Card Number:</string>
+    <string name="no_card_read_yet">No tag read yet</string>
+    <string name="read_tags">Read tags</string>
+    <string name="last_tag_read">Last tag read</string>
+    <string name="nb_reads">Nb reads:</string>
+    <string name="status">Status</string>
+    <string name="status_off">Off</string>
+    <string name="status_waiting_for_card">Waiting for card…</string>
+    <string name="status_reading">Reading</string>
+    <string name="reader">Reader:</string>
+    <string name="device">Device</string>
+    <string name="device_title">Device:</string>
+    <string-array name="devices">
+        <item name="cone_iclass">@string/cone_iclass</item>
+        <item name="cone_eid_iclass">@string/cone_eid_iclass</item>
+        <item name="cone_seos">@string/cone_seos</item>
+        <item name="id_platform">@string/id_platform</item>
+    </string-array>
+    <string name="no_device_selected">No device selected</string>
+    <string name="cone_iclass">C-One SE3210</string>
+    <string name="cone_eid_iclass">C-One e-ID SE3210</string>
+    <string name="cone_seos">C-One OK 5127 CK Mini</string>
+    <string name="id_platform">ID Platform</string>
+    <string name="title_activity_preferences">Settings</string>
+    <string name="pref_device_key">pref_device_key</string>
+</resources>
