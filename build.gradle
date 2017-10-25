@@ -15,8 +15,8 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven { url 'http://arti-01:8081/artifactory/plugins-release'}
-        maven { url 'http://arti-01:8081/artifactory/libs-release'}
+        maven { url 'https://artifactory.coppernic.fr/plugins-release'}
+        maven { url 'https://artifactory.coppernic.fr/artifactory/libs-release'}
     }
 }
 
