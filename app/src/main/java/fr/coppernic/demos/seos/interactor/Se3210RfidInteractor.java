@@ -46,9 +46,11 @@ class Se3210RfidInteractor implements RfidInteractor, PowerUtilsNotifier, Observ
         this.context = context;
         if (device != Device.ID_Platform) {
             try {
-                powerMgmt = PowerMgmtFactory.get().build();
+                powerMgmt = PowerMgmtFactory.get()
+                        .setContext(context)
+                        .build();
             } catch (Exception e) {
-                Log.d(TAG, e.getMessage());
+                Log.d(TAG, "Error building PowerMgmt");
             }
         } else {
             peripheral = IdPlatformPeripheral.RFID;
